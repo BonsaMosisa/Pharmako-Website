@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { StockScreen, BinsScreen, AlertsScreen } from "@/components/PhoneScreens";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
@@ -7,11 +6,7 @@ import {
   Check, Star, Pill, Smartphone, Clock, Users, Apple, Play, Menu
 } from "lucide-react";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-function Index() {
+export default function App() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
